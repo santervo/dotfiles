@@ -6,3 +6,5 @@ set softtabstop=4
 set expandtab
 let vimclojure#WantNailgun = 1
 
+call pathogen#infect() 
+
