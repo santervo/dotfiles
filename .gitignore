@@ -1,0 +1,7 @@
+#exclude everything by default
+*
+
+#except dotfiles
+
+!.*
+
