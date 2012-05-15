@@ -3,4 +3,4 @@
 	email = santervo@gmail.com
 [core]
 	editor = /usr/bin/vim
-	excludesfile = /home/santtu/.gitignore
+	excludesfile = /home/santtu/.gitexcludes
