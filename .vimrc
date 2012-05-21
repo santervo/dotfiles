@@ -8,5 +8,12 @@ set backspace=eol,indent,start
 set vb
 let vimclojure#WantNailgun = 1
 
+"configuration for solarized
+"set background=dark
+"colorscheme solarized
+
+"set status colors
+hi StatusLine ctermbg=Black ctermfg=White
+
 call pathogen#infect() 
 
