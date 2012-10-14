@@ -5,7 +5,11 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 set backspace=eol,indent,start
+
+" no bell
 set vb
+set t_vb=
+
 let vimclojure#WantNailgun = 1
 
 "configuration for solarized
