@@ -1,10 +1,13 @@
-syntax on
-filetype plugin indent on
+syntax o <silent> 
+                indent on
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 set expandtab
 set backspace=eol,indent,start
+
+" ignore files from file listings
+set wildignore+=*.class,*.jar,.git
 
 " no bell
 set vb
