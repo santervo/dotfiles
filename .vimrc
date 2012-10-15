@@ -10,11 +10,14 @@ set backspace=eol,indent,start
 set vb
 set t_vb=
 
+let mapleader = ','
+
+" vimclojure
 let vimclojure#WantNailgun = 1
 
-"configuration for solarized
-"set background=dark
-"colorscheme solarized
+nnoremap <Leader>o :CommandT<CR>
+nnoremap <Leader>b :CommandTBuffer<CR>
+nnoremap <Leader>O :CommandTFlush<CR>
 
 "set status colors
 hi StatusLine ctermbg=Black ctermfg=White
