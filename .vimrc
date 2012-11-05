@@ -1,5 +1,5 @@
-syntax o <silent> 
-                indent on
+syntax on
+filetype plugin indent on
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
@@ -7,11 +7,14 @@ set expandtab
 set backspace=eol,indent,start
 
 " ignore files from file listings
-set wildignore+=*.class,*.jar,.git
+set wildignore+=*.class,*.jar,.git,tmp,node_modules
 
 " no bell
 set vb
 set t_vb=
+
+" enable mouse
+set mouse=a
 
 let mapleader = ','
 
