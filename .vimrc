@@ -28,9 +28,27 @@ noremap <leader>O <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
 "nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-"vimclojure
-let vimclojure#WantNailgun = 1
+"nailgun for vimclojure (disabled)
+"let vimclojure#WantNailgun = 1
+
+"Rspec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+
+"run specs with zeus
+let g:rspec_command = "!zeus rspec {spec}"
 
 "pathogen
 call pathogen#infect() 
+
+"rabl syntax support
+au BufRead,BufNewFile *.rabl setf ruby
+
+set t_Co=256
+colorscheme solarized
+set number
+
+"ignore files/dirs from command-t search
+set wildignore+=node_modules,dist,bower_components
 

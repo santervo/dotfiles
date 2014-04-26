@@ -2,3 +2,8 @@
 #ignore vim swap files
 *.swp
 
+#ignore tags file
+tags
+
+.rvmrc
+nbproject

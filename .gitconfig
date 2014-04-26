@@ -2,5 +2,18 @@
 	name = Santtu Lintervo
 	email = santervo@gmail.com
 [core]
-	editor = /usr/bin/vim
-	excludesfile = /home/santtu/.gitexcludes
+	editor = /usr/local/bin/vim
+	excludesfile = /Users/santtu/.gitexcludes
+[push]
+  default = tracking
+
+[merge]
+	conflictstyle = diff3
+[mergetool "meld"]
+  cmd = "meld -o $MERGED $LOCAL $MERGED $REMOTE"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
