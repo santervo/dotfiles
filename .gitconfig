@@ -17,3 +17,11 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[alias]
+	s = status
+	d = diff --color-words
+	co = checkout
+	aa = add -A
+	l = log --oneline
+	ln = log --oneline --name-only
+	lp = log --oneline -p
