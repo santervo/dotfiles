@@ -1,5 +1,7 @@
 syntax on
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 
 "enable mouse
 set mouse=a
