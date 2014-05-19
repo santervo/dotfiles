@@ -24,4 +24,4 @@
 	aa = add -A
 	l = log --oneline
 	ln = log --oneline --name-only
-	lp = log --oneline -p
+	lp = log --oneline -p --color-words
