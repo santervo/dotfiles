@@ -2,7 +2,7 @@
 	name = Santtu Lintervo
 	email = santervo@gmail.com
 [core]
-	editor = /usr/local/bin/vim
+	editor = vim
 	excludesfile = /Users/santtu/.gitexcludes
 [push]
   default = tracking
@@ -25,3 +25,5 @@
 	l = log --oneline
 	ln = log --oneline --name-only
 	lp = log --oneline -p --color-words
+	au = add -u
+	dc = diff --cached
