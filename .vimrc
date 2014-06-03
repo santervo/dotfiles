@@ -49,7 +49,7 @@ au BufRead,BufNewFile *.rabl setf ruby
 
 set t_Co=256
 set background=dark
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 colorscheme solarized
 set number
 
