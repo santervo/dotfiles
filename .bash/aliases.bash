@@ -1,7 +1,21 @@
-#ls alias
-alias ls="ls -G"
+OS=$(uname)
+
+### OS dependent aliases ###
+if [[ $OS == "Linux" ]]
+then
+  alias ls="ls --color=auto"
+elif [[ $OS == "Darwin" ]]
+then
+  alias ls="ls -G"
+fi
+
+### Common aliases ###
+
 alias la="ls -A"
 alias ll="ls -Al"
+
+alias grep="grep --color=auto"
+alias egrep="grep --color=auto"
 
 #send json data with curl
 alias curljson="curl -H 'Content-Type: application/json'"
