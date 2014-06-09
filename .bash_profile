@@ -9,6 +9,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 . $HOME/.bash/utils.bash
 . $HOME/.bash/options.bash
 . $HOME/.bash/completion.bash
+. $HOME/.bash/node.bash
 
 #local settings
 [[ -f "$HOME/.bash_local" ]] && source "$HOME/.bash_local"
