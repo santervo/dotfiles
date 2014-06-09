@@ -23,3 +23,9 @@ alias curljson="curl -H 'Content-Type: application/json'"
 #pretty print json data
 alias prettyjson="ruby -rjson -e 'puts JSON.pretty_generate JSON.parse(ARGF.read)'"
 
+#alias for ack in Ubuntu
+if [[ `which ack-grep` ]]; then
+  alias ack="ack-grep"
+fi
+
+alias rebash=". ~/.bash_profile"
