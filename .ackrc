@@ -1,1 +1,9 @@
---pager=less -r
+--pager=less -R
+--type-set=haml=.haml
+--type-set=yml=.yml
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-file=is:tags
+--ignore-dir=bower_components
+--ignore-dir=dist
+--ignore-dir=.kitchen
