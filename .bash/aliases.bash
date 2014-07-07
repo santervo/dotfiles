@@ -29,3 +29,6 @@ if [[ `which ack-grep` ]]; then
 fi
 
 alias rebash=". ~/.bash_profile"
+
+#print current time in iso format
+alias isotime="ruby -r time -e 'print Time.now.utc.iso8601'"

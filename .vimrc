@@ -33,6 +33,9 @@ set backspace=eol,indent,start
 "silent bell
 set vb
 
+"copy to clipboard
+set clipboard=unnamed
+
 "set status colors
 hi StatusLine ctermbg=Black ctermfg=White
 

@@ -27,3 +27,4 @@
 	lp = log --oneline -p --color-words
 	au = add -u
 	dc = diff --cached
+	a = add
