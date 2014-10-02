@@ -1,3 +1,18 @@
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'
+
+call vundle#end()
+
 syntax on
 filetype on
 filetype plugin on
@@ -24,10 +39,6 @@ hi StatusLine ctermbg=Black ctermfg=White
 "leader key
 let mapleader = ","
 
-"command-t
-noremap <leader>o <Esc>:CommandT<CR>
-noremap <leader>O <Esc>:CommandTFlush<CR>
-noremap <leader>m <Esc>:CommandTBuffer<CR>
 "nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 "nailgun for vimclojure (disabled)
@@ -41,9 +52,6 @@ map <Leader>l :call RunLastSpec()<CR>
 "run specs with zeus
 let g:rspec_command = "!zeus rspec {spec}"
 
-"pathogen
-call pathogen#infect() 
-
 "rabl syntax support
 au BufRead,BufNewFile *.rabl setf ruby
 
@@ -56,3 +64,6 @@ set number
 "ignore files/dirs from command-t search
 set wildignore+=node_modules,dist,bower_components
 
+" ctrlp.vim
+" search from current working dir
+let g:ctrlp_working_path_mode = 'c'
