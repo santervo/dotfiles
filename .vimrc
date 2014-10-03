@@ -68,5 +68,4 @@ set number
 set wildignore+=node_modules,dist,bower_components
 
 " ctrlp.vim
-" search from current working dir
-let g:ctrlp_working_path_mode = 'c'
+let g:ctrlp_working_path_mode = 'a'
