@@ -10,6 +10,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
