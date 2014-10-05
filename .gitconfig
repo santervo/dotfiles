@@ -3,7 +3,7 @@
 	email = santervo@gmail.com
 [core]
 	editor = vim
-	excludesfile = /Users/santtu/.gitexcludes
+	excludesfile = ~/.gitexcludes
 [push]
   default = tracking
 
