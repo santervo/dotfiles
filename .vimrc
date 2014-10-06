@@ -10,6 +10,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
@@ -58,10 +59,10 @@ let g:rspec_command = "!zeus rspec {spec}"
 "rabl syntax support
 au BufRead,BufNewFile *.rabl setf ruby
 
-set t_Co=256
-set background=dark
+"set t_Co=256
+"set background=dark
 "let g:solarized_termcolors=256
-colorscheme solarized
+"colorscheme solarized
 set number
 
 "ignore files/dirs from command-t search
