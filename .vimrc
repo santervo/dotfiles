@@ -59,10 +59,14 @@ let g:rspec_command = "!zeus rspec {spec}"
 "rabl syntax support
 au BufRead,BufNewFile *.rabl setf ruby
 
-"set t_Co=256
-"set background=dark
-"let g:solarized_termcolors=256
-"colorscheme solarized
+let s:uname = system("uname -s")
+if s:uname == "Darwin\n"
+  "set t_Co=256
+  "set background=dark
+  "let g:solarized_termcolors=256
+  colorscheme solarized
+endif
+
 set number
 
 "ignore files/dirs from command-t search
