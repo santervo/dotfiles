@@ -11,6 +11,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'othree/html5.vim'
 
 call vundle#end()
 
