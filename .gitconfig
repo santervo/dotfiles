@@ -18,7 +18,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [alias]
-	s = status
+	s = status -sb
 	d = diff --color-words
 	co = checkout
 	aa = add -A
@@ -28,3 +28,6 @@
 	au = add -u
 	dc = diff --cached
 	a = add
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
