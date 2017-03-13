@@ -1,10 +1,14 @@
 --pager=less -R
 --type-set=haml=.haml
 --type-set=yml=.yml
+--type-set=xml=.xml
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=.tmp
 --ignore-file=is:tags
 --ignore-dir=bower_components
+--ignore-dir=platforms
+--ignore-dir=plugins
 --ignore-dir=dist
 --ignore-dir=.kitchen
+--ignore-dir=.meteor
