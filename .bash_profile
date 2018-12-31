@@ -8,6 +8,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 . $HOME/.bash/aliases.bash
+. $HOME/.bash/android.bash
 . $HOME/.bash/utils.bash
 . $HOME/.bash/options.bash
 . $HOME/.bash/completion.bash
@@ -15,7 +16,11 @@ export LANG=en_US.UTF-8
 . $HOME/.bash/rvm.bash
 . $HOME/.bash/meteor.bash
 . $HOME/.bash/docker.bash
+. $HOME/.bash/erlang.bash
+. $HOME/.bash/python.bash
 
 #local settings
 [[ -f "$HOME/.bash_local" ]] && source "$HOME/.bash_local"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 

@@ -2,19 +2,17 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'kien/ctrlp.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'othree/html5.vim'
-Plugin 'digitaltoad/vim-jade'
-
-call vundle#end()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"Plugin 'gmarik/Vundle.vim'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-rails'
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'othree/html5.vim'
+"Plugin 'digitaltoad/vim-jade'
+"call vundle#end()
 
 syntax on
 filetype on
@@ -67,7 +65,7 @@ if s:uname == "Darwin\n"
   "set t_Co=256
   "set background=dark
   "let g:solarized_termcolors=256
-  colorscheme solarized
+  "colorscheme solarized
 endif
 
 set number
